@@ -2,6 +2,9 @@ from fastapi import FastAPI
 
 from app.config import APP_NAME, APP_ENV
 from app.routers import documents, incidents
+from contextlib import asynccontextmanager
+from app.database import Base, engine
+import app.models  # noqa: F401  (importing registers the tables)
 
 app = FastAPI(
     title=APP_NAME,

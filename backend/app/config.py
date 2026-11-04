@@ -23,3 +23,5 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM
 # Chunks farther than this are ignored. Tune it using test_search.py.
 RAG_MAX_DISTANCE = float(os.getenv("RAG_MAX_DISTANCE", "0.65"))
 RAG_TOP_K = int(os.getenv("RAG_TOP_K", "4"))
+
+DATABASE_URL = os.getenv("DATABASE_URL")
