@@ -15,3 +15,13 @@ __pycache__/
 
 # Generated files
 *.log
+
+# Uploaded documents - may contain confidential information
+backend/app/storage/uploads/
+
+# Vector database storage
+backend/app/storage/chroma_db/
+
+# Python cache
+__pycache__/
+*.py[cod]
